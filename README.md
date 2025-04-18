@@ -1,59 +1,34 @@
-# TodoApp
+# ✅ Angular Todo App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+Une application de gestion de tâches simple, rapide et efficace développée avec **Angular**.
 
-## Development server
+![Angular](https://img.shields.io/badge/Made%20with-Angular-DD0031?style=for-the-badge&logo=angular)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-To start a local development server, run:
+---
+
+## ✨ Fonctionnalités
+
+- ➕ **Ajouter** une nouvelle tâche
+- ✅ **Marquer** une tâche comme terminée
+- ❌ **Supprimer** une tâche
+- 📭 Afficher un message si **aucune tâche** n’est présente
+
+---
+
+## 📋 Commandes à utiliser
+
+Voici toutes les commandes utiles pour faire fonctionner le projet :
 
 ```bash
+# Cloner le dépôt GitHub
+git clone https://github.com/TsinjoNantosoa/todo_app_angular.git
+
+# Accéder au dossier du projet
+cd todo_app_angular
+
+# Installer les dépendances Node.js
+npm install
+
+# Lancer le serveur Angular en mode développement
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
