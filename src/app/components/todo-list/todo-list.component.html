@@ -1,0 +1,22 @@
+<h2>Ma Todo List</h2>
+<div class="add-task">
+  <input
+    type="text"
+    placeholder="Ajouter une nouvelle tâche..."
+    [(ngModel)]="newTaskTitle"
+    (keyup.enter)="addTask()" />
+  <button (click)="addTask()" [disabled]="!newTaskTitle.trim()">Ajouter</button>
+</div>
+<ul class="task-list">
+  <p *ngIf="tasks.length === 0">Aucune tâche pour le moment !</p>
+  <li *ngFor="let task of tasks" [class.completed]="task.isCompleted">
+    <input
+      type="checkbox"
+      [checked]="task.isCompleted"
+      (change)="toggleCompletion(task)" />
+
+    <span class="task-title">{{ task.title }}</span>
+
+    <button class="delete-btn" (click)="deleteTask(task.id)">Supprimer</button>
+  </li>
+</ul>
